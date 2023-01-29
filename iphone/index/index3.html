@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style/style3.css">
+  <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+  
+  <div class="box">
+
+    
+    <div class="inner">
+        <div class="screen">
+            <div class="result">
+                <span class="span">0</span>
+            </div>
+            <div class="buttons">
+                <button class="item item1 clear"  >AC</button>
+                <button class="item item1 negative" value="+/-" >+/-</button>
+                <button class="item percent sign" value="%" >%</button>
+                <button class="item item3 sign" value="/" >/</button>
+                <button class="item numbers" value="7" >7</button>
+                <button class="item numbers" value="8" >8</button>
+                <button class="item numbers" value="9" >9</button>
+                <button class="item item3 sign" value="x" >x</button>
+                <button class="item numbers" value="4" >4</button>
+                <button class="item numbers" value="5" >5</button>
+                <button class="item numbers" value="6" >6</button>
+                <button class="item item3 sign" value="-" >-</button>
+                <button class="item numbers" value="1" >1</button>
+                <button class="item numbers" value="2" >2</button>
+                <button class="item numbers" value="3" >3</button>
+                <button class="item item3 sign" value="+" >+</button>
+                <button class="item itemZero numbers" value="0"  >0</button>
+                <button class="item comma" >,</button>
+                <button class="item item3 equals">=</button>
+            </div>
+             
+        </div>
+      
+      <div class="operator-icons">
+        <ion-icon name="cellular"></ion-icon>
+        <ion-icon name="wifi" class="wifi1"></ion-icon>
+        <div>
+        <ion-icon name="battery-charging" style="font-size:20px;margin-top: -23px;display: flex;margin-left: 40px;"></ion-icon>
+      </div>
+      </div>
+      <div class="island-popup">
+        <div class="island-popup-camera"></div>
+        
+        <div class="content">
+          <div class="details">
+            <div class="imgBx">
+              <img src="/img.jpeg" alt="">
+            </div>
+            <p>Kutay Arıyor</p>
+          </div>
+          <div class="action">
+            <ion-icon name="call" class="red"></ion-icon>
+            <ion-icon name="call" class="green" onclick="window.location.href = 'index2.html'"></ion-icon>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      
+    <i class="btn btn1"></i>
+    <i class="btn btn2"></i>
+    <i class="btn btn3"></i>
+    <i class="rightSideBtn"></i>
+    
+  </div>
+  <script>
+    const numbers = document.querySelectorAll('.numbers');
+    const result = document.querySelector('.result span');
+    const signs = document.querySelectorAll('.sign');
+    const equals = document.querySelector('.equals');
+    const clear = document.querySelector('.clear');
+    const negative = document.querySelector('.negative');
+    const percent = document.querySelector('.percent');
+
+    
+
+
+    let firstValue="";
+    let isFirstValue= false;
+    let secondValue = "";
+    let isSecondValue= false;
+    let sign = "";
+    let resultValue= 0;
+    
+
+
+    for(let i = 0; i < numbers.length; i++){
+      numbers[i].addEventListener('click' , (e)=>{
+        let atr = e.target.getAttribute('value');
+        if(isFirstValue === false){
+        getFirstValue(atr)
+        }
+        if(isSecondValue == false){
+          getSecondValue(atr)
+        }
+
+      })
+    }
+    function getFirstValue(el) {
+    result.innerHTML = "";
+    firstValue += el;
+    result.innerHTML = firstValue;
+    firstValue = + firstValue;
+    }
+
+    function getSecondValue(el){
+if(firstValue != "" && sign !="") {
+  secondValue += el;
+  result.innerHTML = secondValue;
+  secondValue = + secondValue;
+}
+    }
+
+    function getSign(){
+      for(let i= 0; i < signs.length; i++){
+        signs[i].addEventListener('click',(e) => {
+        sign = e.target.getAttribute('value');
+        isFirstValue =  true;
+
+        })
+      }
+    }
+    getSign();
+
+equals.addEventListener('click',() =>{
+  result.innerHTML = "";
+  if(sign === "+" ){
+    resultValue = firstValue + secondValue;
+  } else if(sign === "-" ){
+    resultValue = firstValue - secondValue;
+  }else if(sign === "x" ){
+    resultValue = firstValue * secondValue;
+  }else if(sign === "/" ){
+    resultValue = firstValue / secondValue;
+  }
+  result.innerHTML=resultValue;
+  firstValue= resultValue;
+  secondValue="";
+  checkResultLength();
+
+})
+function checkResultLength(){
+  resultValue = JSON.stringify(resultValue);
+
+  if(resultValue.length >= 8){
+    resultValue=JSON.parse(resultValue);
+    result.innerHTML= resultValue.toFixed(5);
+
+  }
+}
+negative.addEventListener('click',() =>{
+  result.innerHTML="";
+  if(firstValue !=""){
+    resultValue = -firstValue  ;
+    firstValue = resultValue;
+     
+  }
+  if(firstValue != "" && secondValue !=""&& sign !=""){
+    resultValue= -resultValue;
+  }
+  result.innerHTML = resultValue;
+})
+
+percent.addEventListener('click',()=>{
+  result.innerHTML = "";
+  if(firstValue !=""){
+    resultValue = firstValue / 100 ;
+    firstValue = resultValue;
+     
+  }
+  if(firstValue != "" && secondValue !=""&& sign !=""){
+    resultValue= resultValue /100;
+  }
+  result.innerHTML = resultValue;
+})
+
+clear.addEventListener('click',() =>{
+  result.innerHTML= 0;
+  firstValue="";
+  isFirstValue= false;
+  secondValue="";
+  isSecondValue=false;
+  sign="";
+  resultValue= 0;
+
+})
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
