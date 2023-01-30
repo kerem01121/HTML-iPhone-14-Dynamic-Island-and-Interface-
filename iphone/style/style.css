@@ -37,7 +37,7 @@ body
 {
     position: absolute;
     inset: 3px;
-    background: url(/img/bg.png);
+    background: url(/iphone/img/bg.png);
     background-size: cover;
     background-position: center;
     border-radius: 48px;

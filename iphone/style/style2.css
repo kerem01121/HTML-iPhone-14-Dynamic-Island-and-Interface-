@@ -37,7 +37,7 @@ body
 {
     position: absolute;
     inset: 3px;
-    background: url(/img/bg2.png);
+    background: url(/iphone/img/bg2.png);
     background-size: cover;
     background-position: center;
     border-radius: 48px;
@@ -410,97 +410,97 @@ ion-icon.green{
     
   }
   .app:nth-child(1){
-    background: url(/img/netflix.png);
+    background: url(/iphone/img/netflix.png);
     background-size: cover;
   }
   .app:nth-child(2){
-    background: url(/img/spotify.png);
+    background: url(/iphone/img/spotify.png);
     background-size: cover;
   }
   .app:nth-child(3){
-    background: url(/img/apple.png);
+    background: url(/iphone/img/apple.png);
     background-size: cover;
   }
   .app:nth-child(4){
-    background: url(/img/setting2.png);
+    background: url(/iphone/img/setting2.png);
     background-size: cover;
   }
 
 
 
   .app2:nth-child(1){
-    background: url(/img/calc.png);
+    background: url(/iphone/img/calc.png);
     background-size: cover;
   }
   .app2:nth-child(2){
-    background: url(/img/amazon2.png);
+    background: url(/iphone/img/amazon2.png);
     background-size: cover;
   }
   .app2:nth-child(3){
-    background: url(/img/dc.png);
+    background: url(/iphone/img/dc.png);
     background-size: cover;
   }
   .app2:nth-child(4){
-    background: url(/img/tw.png);
+    background: url(/iphone/img/tw.png);
     background-size: cover;
   }
 
 
 
   .app3:nth-child(1){
-    background: url(/img/yt.png);
+    background: url(/iphone/img/yt.png);
     background-size: cover;
   }
   .app3:nth-child(2){
-    background: url(/img/tr.png);
+    background: url(/iphone/img/tr.png);
     background-size: cover;
   }
   .app3:nth-child(3){
-    background: url(/img/eok.png);
+    background: url(/iphone/img/eok.png);
     background-size: cover;
   }
   .app3:nth-child(4){
-    background: url(/img/tw2.png);
+    background: url(/iphone/img/tw2.png);
     background-size: cover;
   }
 
 
 
   .app4:nth-child(1){
-    background: url(/img/cam.png);
+    background: url(/iphone/img/cam.png);
     background-size: cover;
   }
   .app4:nth-child(2){
-    background: url(/img/dol.png);
+    background: url(/iphone/img/dol.png);
     background-size: cover;
   }
   .app4:nth-child(3){
-    background: url(/img/dp.png);
+    background: url(/iphone/img/dp.png);
     background-size: cover;
   }
   .app4:nth-child(4){
-    background: url(/img/taksi.png);
+    background: url(/iphone/img/taksi.png);
     background-size: cover;
   }
 
 
   .app5:nth-child(1){
-    background-image: url(/img/phone.png);
+    background-image: url(/iphone/img/phone.png);
     background-size: cover;
     
   }
   .app5:nth-child(2){
-    background-image: url(/img/saf.png);
+    background-image: url(/iphone/img/saf.png);
     background-size: cover;
   }
   .app5:nth-child(3){
-    background-image: url(/img/mess.png);
+    background-image: url(/iphone/img/mess.png);
     background-size: cover;
     background-position: center;
     
   }
   .app5:nth-child(4){
-    background-image: url(/img/gog.png);
+    background-image: url(/iphone/img/gog.png);
     background-size: cover;
     
   }
