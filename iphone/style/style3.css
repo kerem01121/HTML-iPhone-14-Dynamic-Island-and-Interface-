@@ -277,14 +277,14 @@ ion-icon.green{
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    z-index: 99999;
+    z-index: 9999px;
     transition: all .5s;
     visibility: visible;
     opacity: 0;
   }
   .operator-icons{
     position: absolute;
-    top: 16px;
+    top: 75px;
     right: 20px;
     font-size: 14px;
     transition: all .2s;
