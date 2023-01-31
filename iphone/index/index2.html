@@ -24,13 +24,24 @@
     <i class="btn btn3"></i>
     <i class="rightSideBtn"></i>
       <div class="iphone-14">
+        
         <div class="operator-icons">
+          
           <ion-icon name="cellular"></ion-icon>
           <ion-icon name="wifi" class="wifi1"></ion-icon>
           <div>
             <ion-icon name="battery-charging" style="font-size:20px;margin-top: -20px;display: flex;margin-left: 40px;"></ion-icon>
         </div>
         </div>
+        <div class="leftside">
+          <div class="datediv1">
+              <div id="date" class="date"></div>
+            
+            <div class="clocks">
+              <p id="time"></p>
+            </div>
+          </div>
+      </div>
         <div class="island-popup">
           <div class="island-popup-camera"></div>
           <div class="content">
@@ -63,8 +74,6 @@
   </div>
           
         </div>
-        
-        
         
         <div class="swiper mySwiper">
           
@@ -405,6 +414,19 @@ let popup = document.querySelector('.island-popup');
     popup.onclick  = function(){
       popup.classList.toggle('active')
     }
+    function getTime() {
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? '' : '';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    let time = hours + ':' + minutes + '' +  ' ' + ampm;
+    document.getElementById("time").innerHTML = time;
+    setTimeout(getTime, 1000);
+  }
+  getTime();
     
     </script>
   </body>

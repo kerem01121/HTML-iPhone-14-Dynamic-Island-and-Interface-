@@ -116,9 +116,16 @@ a{
   
 .datediv{
 
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
+  font-size: 12px;
+}
+.date{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: white;
+  text-align: center;
 }
 .box:hover .datediv{
 opacity: 1;
@@ -625,7 +632,7 @@ ion-icon.green{
     background-color: #241e1e73;
     border-radius: 30px;
     margin-top: 495px;
-    margin-left: -2px;
+    margin-left: -50px;
     
      
     
@@ -638,13 +645,17 @@ ion-icon.green{
   margin-left: -1px;
 }
 .leftside{
- display: block;
- margin-top: -20px;
  
-  margin-left: -170px;
+  display: block;
+   margin-top: 15px;
+   color: white;
+    margin-left: 15px;
+    
   
-  
-}
+   
+   
+ }
+ 
 html,
   body {
     position: relative;
