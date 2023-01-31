@@ -26,7 +26,7 @@ a{
 .iphone-14{
   position: absolute;
   inset: 3px;
-  background: url(/iphone/img/bg2.png);
+  background: url(/iphone/img/bg4.png);
   background-size: cover;
   background-position: center;
   border-radius: 48px;
@@ -485,11 +485,42 @@ ion-icon.green{
 .app:nth-child(1){
   background: url(/iphone/img/netflix.png);
   background-size: cover;
+  
 }
-.app:nth-child(2){
-  background: url(/iphone/img/spotify.png);
-  background-size: cover;
+
+.sehir{
+  font-weight: bold;
+ 
+  
+   position: relative;
+   top: -30px;
+   margin-left: -40px;
+   cursor: pointer;
+  
 }
+.derece{
+  font-weight: bold;
+ font-size: 30px;
+  
+   position: relative;
+   top: -13px;
+   margin-left: -45px;
+   cursor: pointer;
+  
+}
+.hava{
+  font-weight: bold;
+ 
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  margin-left: -45px;
+
+}
+
+
+
+
 .app:nth-child(3){
   background: url(/iphone/img/apple.png);
   background-size: cover;
@@ -563,7 +594,7 @@ ion-icon.green{
   
 }
 .app5:nth-child(2){
-  background-image: url(/iphone/img/saf.png);
+  background-image: url(/iphone/img/saf5.png);
   background-size: cover;
 }
 .app5:nth-child(3){
@@ -596,7 +627,7 @@ ion-icon.green{
   font-size: 11px;
   margin-top: 45px;
   display: inline-block;
-  margin-left: 4px;
+  margin-left: -1px;
 }
 .leftside{
  display: block;
