@@ -1,5 +1,4 @@
-# HTML-iPhone-14-Dynamic-Island-and-Interface-
-iPhone 14 Pro Max Screen,Menu and Calculator.
+
 [TÜRKÇE]
 ilk sayfayı visual  studio kod ile açtığınızda yukarıdaki dinamik adadaki yeşil
 arama butonuna bastığınız takdirde sizi ikinci sayfaya yönlendirir.
