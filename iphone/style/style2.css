@@ -508,30 +508,114 @@ ion-icon.green{
  
   
    position: relative;
-   top: -30px;
-   margin-left: -40px;
+   top: -50px;
+   margin-left: -50px;
    cursor: pointer;
   
 }
 .derece{
-  font-weight: bold;
+  
  font-size: 30px;
   
    position: relative;
-   top: -13px;
-   margin-left: -45px;
+   top: -20px;
+   margin-left: -47px;
    cursor: pointer;
+   
   
+}
+.ruzgar{
+  font-size: 9px;
+  left: -38px;
+  top: 40px;
+ position: relative;
+  
+}
+.navigate1{
+  display: flex;
+  margin-top: -66px;
+  margin-left: 15px;
 }
 .hava{
   font-weight: bold;
  
   cursor: pointer;
   position: relative;
-  top: 20px;
+  top: 15px;
   margin-left: -45px;
 
 }
+.yazihava{
+
+  display: flex;
+  color:  white;
+  margin-left: 18px;
+  margin-top: 74px;
+  font-size: 11px;
+  
+}
+.yazihava2{
+
+  display: flex;
+  color:  rgb(255, 255, 255);
+  margin-left: 40px;
+  margin-top: 120px;
+  font-size: 11px;
+}
+.uykuu{
+
+  color: #55b6ac;
+  font-weight: bold;
+  margin-top: -13px;
+  margin-left: 27px;
+  display: flex;
+  
+}
+.cizgi{
+color: rgba(116, 116, 116, 0.562);
+display: flex;
+margin-left: 12px;
+margin-top: 10px;
+cursor: pointer;
+}
+.altyazi{
+
+  color: rgba(116, 116, 116, 0.637);
+  font-weight: bold;
+  display: flex;
+  font-size: 8px;
+  margin-left: 8px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.altyazi2{
+
+  color: rgba(116, 116, 116, 0.733);
+  font-weight: bold;
+  display: flex;
+  font-size: 11px;
+  margin-left: 11px;
+  margin-top: 2px;
+  cursor: pointer;
+
+}
+
+.cizgi2{
+  color: rgba(116, 116, 116, 0.562);
+  margin-top: 3px;
+  display: flex;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.cizgi3{
+  color: rgba(116, 116, 116, 0.562);
+  margin-top: 3px;
+  display: flex;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
 
 
 
@@ -632,7 +716,7 @@ ion-icon.green{
     background-color: #241e1e73;
     border-radius: 30px;
     margin-top: 495px;
-    margin-left: -43px;
+    margin-left: -65px;
     
      
     
@@ -649,7 +733,9 @@ ion-icon.green{
   display: block;
    margin-top: 15px;
    color: white;
-    margin-left: 15px;
+    margin-left: 35px;
+   font-weight: bold;
+   font-size: 15px;
     
   
    
