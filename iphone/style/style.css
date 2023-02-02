@@ -44,22 +44,26 @@ body
     border: 10px solid #000;
     display: flex;
     justify-content: center;
-    opacity: 0;
+    opacity: 0.5;
     transition: 0.5s;
     
 }
+.box:hover .operator-icons{
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
 .datediv{
 
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
+    opacity: 0.4;
+    
+    transition: 0.4s;
 }
 .box:hover .datediv{
 opacity: 1;
 
 visibility: inherit;
 }
-.box:hover .inner
+.box:hover .inner 
 {
     opacity: 1;
 
@@ -287,9 +291,12 @@ ion-icon.green{
     top: 16px;
     right: 20px;
     font-size: 14px;
-    transition: all .2s;
+    
+    opacity: 0;
+    transition: 0.2s ;
     color: white;
   }
+ 
   
   
   

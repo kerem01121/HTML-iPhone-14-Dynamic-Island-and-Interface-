@@ -734,7 +734,7 @@ cursor: pointer;
     background-color: #a8a8a873;
     border-radius: 30px;
     margin-top: 495px;
-    margin-left: -65px;
+    margin-left: -74px;
     
      
     
@@ -849,6 +849,8 @@ transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 
 
 }
+
+
 .saat{
 background-color: #1e1e1e;
   position: absolute;
@@ -877,7 +879,7 @@ border-radius: 50%;
 .clock  .hand.second{
 width: 0.6px;
 height: 45%;
-background-color: #d89b3c;
+background-color: #d6962f;
 
 }
 .clock  .hand.minute{
