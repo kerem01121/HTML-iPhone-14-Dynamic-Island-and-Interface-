@@ -79,6 +79,13 @@ a{
   -webkit-align-items: center;
   align-items: center;
 }
+.swiper-pagination-bullet{
+  background: #fff !important;
+}
+.swiper-pagination-bullet-active{
+  background: #fff;
+}
+
 
 
 
