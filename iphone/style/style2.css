@@ -1,33 +1,33 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: arial;
 }
 
-body{
+body {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #fff;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
 
 }
 
-.iphone{
+.iphone {
   position: relative;
-    width: 300px;
-    height: 600px;
-    background: #666;
-    border-radius: 50px;
+  width: 300px;
+  height: 600px;
+  background: #666;
+  border-radius: 50px;
 }
 
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-.iphone-14{
+.iphone-14 {
   position: absolute;
   inset: 3px;
   background: url(/iphone/img/bg4.png);
@@ -45,9 +45,20 @@ a{
 
 
 
-@keyframes bellNtf{
-  0%,40%,80%, 100%{color: gray;}
-  10%,60%, 90%{color: red;}
+@keyframes bellNtf {
+
+  0%,
+  40%,
+  80%,
+  100% {
+    color: gray;
+  }
+
+  10%,
+  60%,
+  90% {
+    color: red;
+  }
 }
 
 
@@ -79,29 +90,31 @@ a{
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
   background: #fff !important;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
   background: #fff;
 }
 
 
 
 
-  
 
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*
-{
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-.box{
+.box {
 
   position: relative;
   width: 300px;
@@ -109,7 +122,8 @@ a{
   background: #666;
   border-radius: 50px;
 }
-.box::before{
+
+.box::before {
 
   content: '';
   position: absolute;
@@ -120,12 +134,13 @@ a{
 
 }
 
-  
-.datediv{
+
+.datediv {
 
   font-size: 12px;
 }
-.date{
+
+.date {
   position: absolute;
   top: 15%;
   left: 50%;
@@ -134,17 +149,19 @@ a{
   color: white;
   text-align: center;
 }
-.box:hover .datediv{
-opacity: 1;
 
-visibility: inherit;
+.box:hover .datediv {
+  opacity: 1;
+
+  visibility: inherit;
 }
-.box:hover .inner
-{
+
+.box:hover .inner {
   opacity: 1;
 
 }
-.btn{
+
+.btn {
   position: absolute;
   top: 110px;
   left: -2px;
@@ -152,21 +169,24 @@ visibility: inherit;
   height: 26px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  background: radial-gradient(#ccc,#666,#222);
+  background: radial-gradient(#ccc, #666, #222);
   z-index: 10;
 
 }
-.btn.btn2{
+
+.btn.btn2 {
   top: 160px;
   height: 40px;
 
 }
-.btn.btn3{
+
+.btn.btn3 {
   top: 220px;
   height: 40px;
 
 }
-.rightSideBtn{
+
+.rightSideBtn {
   position: absolute;
   top: 170px;
   right: -2px;
@@ -174,10 +194,11 @@ visibility: inherit;
   height: 70px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  background: radial-gradient(#ccc,#666,#222);
+  background: radial-gradient(#ccc, #666, #222);
   z-index: 10;
 }
-.island-popup{
+
+.island-popup {
   position: absolute;
   top: 10px;
   width: 90px;
@@ -192,27 +213,31 @@ visibility: inherit;
 
 
 }
-.island-popup:hover{
+
+.island-popup:hover {
   width: 200px;
-  height: 25px; 
+  height: 25px;
 }
-.island-popup.active{
+
+.island-popup.active {
   width: 250px;
   height: 60px;
-    border-radius: 50px;
+  border-radius: 50px;
 
 
 }
-.content{
-position: relative;
-display: flex;
-width: 100%;
-justify-content: space-between;
-padding: 10px;
-line-height: 25px;
+
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  line-height: 25px;
 
 }
-.content p{
+
+.content p {
   color: #fff;
   font-size: 0.6em;
   cursor: default;
@@ -220,7 +245,8 @@ line-height: 25px;
   opacity: 0;
   transition: 0.5s;
 }
-.island-popup-camera{
+
+.island-popup-camera {
   color: white;
   position: absolute;
   top: 8px;
@@ -233,8 +259,9 @@ line-height: 25px;
   z-index: 99999;
   transition: all .5s;
 }
-.island-popup:hover .island-popup-camera{
- 
+
+.island-popup:hover .island-popup-camera {
+
   position: absolute;
   top: 8px;
   right: 10px;
@@ -246,7 +273,8 @@ line-height: 25px;
   visibility: visible;
   opacity: 0;
 }
-.action{
+
+.action {
   position: relative;
   top: 5px;
   color: #fff;
@@ -259,50 +287,57 @@ line-height: 25px;
 
 
 }
-.island-popup.active .action{
+
+.island-popup.active .action {
   top: 12px;
 }
-ion-icon.red{
+
+ion-icon.red {
   color: #fd443b;
-  transform:  rotate(135deg);
+  transform: rotate(135deg);
   cursor: pointer;
   transition: 0.5s;
 }
-ion-icon.green{
+
+ion-icon.green {
   color: #31d059;
   cursor: pointer;
   transition: 0.5s;
 }
+
 .island-popup:hover p,
 .island-popup.active p,
 .island-popup:hover .action,
-.island-popup.active .action
-{
+.island-popup.active .action {
   visibility: visible;
   opacity: 1;
   transition-delay: 0.25s;
 }
-.island-popup.active ion-icon.red{
+
+.island-popup.active ion-icon.red {
   background: #fd443b;
   color: #fff;
   border-radius: 50%;
-  box-shadow:  0 0 0 8px #fd443b;
+  box-shadow: 0 0 0 8px #fd443b;
   margin-right: 12px;
 }
-.island-popup.active ion-icon.green{
+
+.island-popup.active ion-icon.green {
   background: #31d059;
   color: #fff;
   border-radius: 50%;
-  box-shadow:  0 0 0 8px #31d059;
+  box-shadow: 0 0 0 8px #31d059;
   margin-right: 8px;
 }
-.details{
+
+.details {
   position: relative;
   display: flex;
   align-items: center;
 
 }
-.details .imgBx{
+
+.details .imgBx {
   position: relative;
   width: 0;
   height: 0;
@@ -312,14 +347,16 @@ ion-icon.green{
   transition: 0.5s;
 
 }
-.island-popup.active .details .imgBx{
+
+.island-popup.active .details .imgBx {
   width: 40px;
-  height: 40px; 
+  height: 40px;
   margin-right: 8px;
 
 
 }
-.details .imgBx img{
+
+.details .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -329,13 +366,15 @@ ion-icon.green{
 
 
 }
-.operator-name{
+
+.operator-name {
   position: absolute;
   top: 16px;
   left: 30px;
   font-size: 14px;
   color: white;
 }
+
 .clock {
   position: absolute;
   top: 25%;
@@ -344,9 +383,10 @@ ion-icon.green{
   font-size: 70px;
   color: white;
   text-align: center;
-  
+
 }
-.date{
+
+.date {
   position: absolute;
   top: 15%;
   left: 50%;
@@ -355,7 +395,8 @@ ion-icon.green{
   color: white;
   text-align: center;
 }
-.operator-name{
+
+.operator-name {
   position: absolute;
   top: 16px;
   left: 30px;
@@ -363,8 +404,8 @@ ion-icon.green{
   color: white;
 }
 
-.island-popup:hover .island-popup-camera{
- 
+.island-popup:hover .island-popup-camera {
+
   position: absolute;
   top: 8px;
   right: 10px;
@@ -376,7 +417,8 @@ ion-icon.green{
   visibility: visible;
   opacity: 0;
 }
-.operator-icons{
+
+.operator-icons {
   position: absolute;
   top: 16px;
   right: 20px;
@@ -387,205 +429,216 @@ ion-icon.green{
 
 
 
-.wifi1{
+.wifi1 {
   font-size: 17px;
 }
-.iconss{
+
+.iconss {
 
   margin-top: 50px;
-  
+
   display: flex;
 
 }
 
 
 
-.iconss div{
+.iconss div {
   margin: 11px;
   z-index: 100;
   background: white;
   width: 43px;
   height: 43px;
   border-radius: 12px;
-  
+
   cursor: pointer;
   transform: transform 400ms ease-in-out;
-  
+
 }
 
-.iconss2{
+.iconss2 {
 
   margin-top: 15px;
-  
+
   display: flex;
 
 }
 
 
 
-.iconss2 div{
+.iconss2 div {
   margin: 11px;
   z-index: 100;
   background: white;
   width: 43px;
   height: 43px;
   border-radius: 12px;
-  
+
   cursor: pointer;
   transform: transform 400ms ease-in-out;
-  
+
 }
 
-.iconss3{
+.iconss3 {
 
   margin-top: 15px;
-  
+
   display: flex;
 
 }
 
 
 
-.iconss4 div{
+.iconss4 div {
   margin: 11px;
   z-index: 100;
   background: white;
   width: 43px;
   height: 43px;
   border-radius: 12px;
-  
+
   cursor: pointer;
   transform: transform 400ms ease-in-out;
-  
+
 }
 
-.iconss4{
+.iconss4 {
 
   margin-top: 15px;
-  
+
   display: flex;
 
 }
 
 
 
-.iconss5 div{
+.iconss5 div {
   margin: 11px;
   z-index: 100;
   background: white;
   width: 43px;
   height: 43px;
   border-radius: 12px;
- 
+
   cursor: pointer;
   transform: transform 400ms ease-in-out;
-  
+
 }
 
-.iconss5{
+.iconss5 {
 
   margin-top: 3px;
-  
+
   display: flex;
 
 }
 
 
 
-.iconss3 div{
+.iconss3 div {
   margin: 11px;
   z-index: 100;
   background: white;
   width: 43px;
   height: 43px;
   border-radius: 12px;
-  
+
   cursor: pointer;
   transform: transform 400ms ease-in-out;
-  
-}
-.app:nth-child(1){
-  background: url(/iphone/img/netflix.png);
-  background-size: cover;
-  
+
 }
 
-.sehir{
+.app:nth-child(1) {
+  background: url(/iphone/img/netflix.png);
+  background-size: cover;
+
+}
+
+.sehir {
   font-weight: bold;
- 
-  
-   position: relative;
-   top: -50px;
-   margin-left: -50px;
-   cursor: pointer;
-  
+
+
+  position: relative;
+  top: -50px;
+  margin-left: -50px;
+  cursor: pointer;
+
 }
-.derece{
-  
- font-size: 30px;
-  
-   position: relative;
-   top: -20px;
-   margin-left: -47px;
-   cursor: pointer;
-   
-  
+
+.derece {
+
+  font-size: 30px;
+
+  position: relative;
+  top: -20px;
+  margin-left: -47px;
+  cursor: pointer;
+
+
 }
-.ruzgar{
+
+.ruzgar {
   font-size: 15px;
   left: -38px;
   top: 38px;
- position: relative;
-  
+  position: relative;
+
 }
-.navigate1{
+
+.navigate1 {
   display: flex;
   margin-top: -66px;
   margin-left: 15px;
 }
-.hava{
+
+.hava {
   font-weight: bold;
- 
+
   cursor: pointer;
   position: relative;
   top: 15px;
   margin-left: -45px;
 
 }
-.yazihava{
+
+.yazihava {
 
   display: flex;
-  color:  white;
+  color: white;
   margin-left: 18px;
   margin-top: 74px;
   font-size: 11px;
-  
+
 }
-.yazihava2{
+
+.yazihava2 {
 
   display: flex;
-  color:  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-left: 40px;
   margin-top: 120px;
   font-size: 11px;
 }
-.uykuu{
+
+.uykuu {
 
   color: #55b6ac;
   font-weight: bold;
   margin-top: -13px;
   margin-left: 27px;
   display: flex;
-  
+
 }
-.cizgi{
-color: rgba(116, 116, 116, 0.562);
-display: flex;
-margin-left: 12px;
-margin-top: 10px;
-cursor: pointer;
+
+.cizgi {
+  color: rgba(116, 116, 116, 0.562);
+  display: flex;
+  margin-left: 12px;
+  margin-top: 10px;
+  cursor: pointer;
 }
-.altyazi{
+
+.altyazi {
 
   color: rgba(116, 116, 116, 0.637);
   font-weight: bold;
@@ -595,7 +648,8 @@ cursor: pointer;
   margin-top: 6px;
   cursor: pointer;
 }
-.altyazi2{
+
+.altyazi2 {
 
   color: rgba(116, 116, 116, 0.733);
   font-weight: bold;
@@ -607,7 +661,7 @@ cursor: pointer;
 
 }
 
-.cizgi2{
+.cizgi2 {
   color: rgba(116, 116, 116, 0.562);
   margin-top: 3px;
   display: flex;
@@ -615,7 +669,7 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.cizgi3{
+.cizgi3 {
   color: rgba(116, 116, 116, 0.562);
   margin-top: 3px;
   display: flex;
@@ -627,15 +681,17 @@ cursor: pointer;
 
 
 
-.app:nth-child(3){
+.app:nth-child(3) {
   background: url(/iphone/img/apple.png);
   background-size: cover;
 }
-.app:nth-child(4){
+
+.app:nth-child(4) {
   background: url(/iphone/img/setting2.png);
   background-size: cover;
 }
-.daire{
+
+.daire {
   background-color: rgb(250, 27, 27);
   color: #ff590000;
   border-radius: 120px;
@@ -644,9 +700,10 @@ cursor: pointer;
   margin-top: -7px;
   position: absolute;
 }
+
 .bir {
   color: rgb(255, 255, 255);
- 
+
   margin-left: 40px;
   margin-top: -63px;
   display: flex;
@@ -656,210 +713,298 @@ cursor: pointer;
 
 
 
-.app2:nth-child(1){
+.app2:nth-child(1) {
   background: url(/iphone/img/calc.png);
   background-size: cover;
 }
-.app2:nth-child(2){
+
+.app2:nth-child(2) {
   background: url(/iphone/img/amazon2.png);
   background-size: cover;
 }
-.app2:nth-child(3){
+
+.app2:nth-child(3) {
   background: url(/iphone/img/dc.png);
   background-size: cover;
 }
-.app2:nth-child(4){
+
+.app2:nth-child(4) {
   background: url(/iphone/img/tw.png);
   background-size: cover;
 }
 
 
 
-.app3:nth-child(1){
+.app3:nth-child(1) {
   color: transparent;
   background-color: transparent;
 }
-.app3:nth-child(2){
+
+.app3:nth-child(2) {
   background: url(/iphone/img/tr.png);
   background-size: cover;
 }
-.app3:nth-child(3){
+
+.app3:nth-child(3) {
   background: url(/iphone/img/eok.png);
   background-size: cover;
 }
-.app3:nth-child(4){
+
+.app3:nth-child(4) {
   background: url(/iphone/img/tw2.png);
   background-size: cover;
 }
 
 
 
-.app4:nth-child(1){
+.app4:nth-child(1) {
   background: url(/iphone/img/cam.png);
   background-size: cover;
 }
-.app4:nth-child(2){
+
+.app4:nth-child(2) {
   background: url(/iphone/img/dol.png);
   background-size: cover;
 }
-.app4:nth-child(3){
+
+.app4:nth-child(3) {
   background: url(/iphone/img/dp.png);
   background-size: cover;
 }
-.app4:nth-child(4){
+
+.app4:nth-child(4) {
   background: url(/iphone/img/taksi.png);
   background-size: cover;
 }
 
 
-.app5:nth-child(1){
+.app5:nth-child(1) {
   background-image: url(/iphone/img/phone.png);
   background-size: cover;
-  
+
 }
-.app5:nth-child(2){
+
+.app5:nth-child(2) {
   background-image: url(/iphone/img/saf5.png);
   background-size: cover;
 }
-.app5:nth-child(3){
+
+.app5:nth-child(3) {
   background-image: url(/iphone/img/mess.png);
   background-size: cover;
   background-position: center;
-  
+
 }
-.app5:nth-child(4){
+
+.app5:nth-child(4) {
   background-image: url(/iphone/img/gog.png);
   background-size: cover;
-  
+
 }
 
 
 
-.blralt{
+.blralt {
   width: 260px;
-   height: 70px;
-    background-color: #a8a8a873;
-    border-radius: 30px;
-    margin-top: 495px;
-    margin-left: -74px;
-    
-     
-    
+  height: 70px;
+  background-color: #a8a8a873;
+  border-radius: 30px;
+  margin-top: 495px;
+  margin-left: -74px;
+
+
+
 }
-.sutun1{
+
+.sutun1 {
   color: white;
   font-size: 11px;
   margin-top: 45px;
   display: inline-block;
   margin-left: -1px;
 }
-.leftside{
- 
+
+.leftside {
+
   display: block;
-   margin-top: 15px;
-   color: white;
-    margin-left: 35px;
-   font-weight: bold;
-   font-size: 15px;
-    
-  
-   
-   
- }
- 
+  margin-top: 15px;
+  color: white;
+  margin-left: 35px;
+  font-weight: bold;
+  font-size: 15px;
+
+
+
+
+}
+
 html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-
- 
-
-  .swiper-slide {
-    text-align: center;
-    
-    
-
-    /* Center slide text vertically */
-    
-    
-    
-  }
-  ::after, *::before{
-
-    box-sizing: border-box;
-    font-family: sans-serif;
+body {
+  position: relative;
+  height: 100%;
 }
-.clock{
 
-    width: 40px;
-    height: 40px;
-   display: inline-block;
-   margin-top: 11px;
-   margin-left: -16px;
-    border-radius: 50%;
-    border: 2px solid #1e1e1e;
-    position: relative;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, .8);
-    
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
-.clock .number{
-    --rotation:0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    transform: rotate(var(--rotation));
-   color: black;
-    text-align: center;
-font-size: 0.35rem;
 
-}
-.clock .number1{--rotation: 30deg;}
-.clock .number2{--rotation: 60deg;}
-.clock .number3{--rotation: 90deg;}
-.clock .number4{--rotation: 120deg;}
-.clock .number5{--rotation: 150deg;}
-.clock .number6{--rotation: 180deg;}
-.clock .number7{--rotation: 210deg;}
-.clock .number8{--rotation: 240deg;}
-.clock .number9{--rotation: 270deg;}
-.clock .number10{--rotation: 300deg;}
-.clock .number11{--rotation: 330deg;}
-.clock .hand{
- 
 
---rotation:0;
-position: absolute;
-bottom: 50%;
-left: 50%;
-width: 10px;
-height: 50%;
 
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-z-index: 10;
-background-color: black;
-transform-origin:bottom ;
-transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+.swiper-slide {
+  text-align: center;
+
+
+
+  /* Center slide text vertically */
 
 
 
 }
 
+::after,
+*::before {
 
-.saat{
-background-color: #1e1e1e;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.clock {
+
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 11px;
+  margin-left: -16px;
+  border-radius: 50%;
+  
+  border: 2px solid #1e1e1e;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, .8);
+
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  transform: rotate(var(--rotation));
+  color: black;
+  text-align: center;
+  font-size: 0.35rem;
+
+}
+
+.clock .number1 {
+  transform: rotate(30deg);
+}
+ .clock .number1 div{
+  transform: rotate(-30deg);
+}
+
+.clock .number2 {
+  transform: rotate(60deg);
+}
+.clock .number2 div{
+  transform: rotate(-60deg);
+}
+
+.clock .number3 {
+  transform: rotate(90deg);
+}
+.clock .number3 div{
+  transform: rotate(-90deg);
+}
+
+.clock .number4 {
+  transform: rotate(120deg);
+}
+.clock .number4 div{
+  transform: rotate(-120deg);
+}
+
+.clock .number5 {
+  transform: rotate(150deg);
+}
+.clock .number5 div{
+  transform: rotate(-150deg);
+}
+
+.clock .number6 {
+  transform: rotate(180deg);
+}
+.clock .number6 div{
+  transform: rotate(-180deg);
+}
+
+.clock .number7 {
+  transform: rotate(210deg);
+}
+.clock .number7 div{
+  transform: rotate(-210deg);
+}
+
+.clock .number8 {
+  transform: rotate(240deg);
+}
+.clock .number8 div{
+  transform: rotate(-240deg);
+}
+
+.clock .number9 {
+  transform: rotate(270deg);
+}
+.clock .number9 div{
+  transform: rotate(-270deg);
+}
+
+.clock .number10 {
+  transform: rotate(300deg);
+}
+.clock .number10 div{
+  transform: rotate(-300deg);
+}
+
+.clock .number11 {
+  transform: rotate(330deg);
+}
+.clock .number11 div{
+  transform: rotate(-330deg);
+}
+
+.clock .hand {
+
+
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 10px;
+  height: 50%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 10;
+  background-color: black;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+
+
+
+}
+
+
+.saat {
+  background-color: #1e1e1e;
   position: absolute;
   margin-top: 25px;
   border-radius: 25%;
@@ -869,50 +1014,39 @@ background-color: #1e1e1e;
 
 
 }
-.clock::after{
 
-content: '';
-position: absolute;
-background-color: black;
-z-index: 11;
-width: 3px;
-height:3px;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-border-radius: 50%;
+.clock::after {
 
-}
-.clock  .hand.second{
-width: 0.6px;
-height: 45%;
-background-color: #d6962f;
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 3px;
+  height: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 
 }
-.clock  .hand.minute{
-width: 1px;
-height: 40%;
-background-color: black;
+
+.clock .hand.second {
+  width: 0.6px;
+  height: 45%;
+  background-color: #d6962f;
 
 }
-.clock  .hand.hour{
-width: 1px;
-height: 25%;
-background-color: black;
+
+.clock .hand.minute {
+  width: 1px;
+  height: 40%;
+  background-color: black;
 
 }
-  
- 
 
+.clock .hand.hour {
+  width: 1px;
+  height: 25%;
+  background-color: black;
 
-
-
-
-
-
-
-
-
-
-
-
+}
