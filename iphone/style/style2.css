@@ -94,6 +94,7 @@ a {
 .swiper-pagination-bullet {
   background: #fff !important;
 }
+
 .swiper-pagination {
   background: rgba(255, 255, 255, 0.315) !important;
   display: inline-block !important;
@@ -102,7 +103,7 @@ a {
   margin-left: 100px !important;
   right: 0 !important;
   padding: 5px;
-  
+
 }
 
 .swiper-pagination-bullet-active {
@@ -224,19 +225,6 @@ a {
 
 }
 
-.island-popup:hover {
-  width: 200px;
-  height: 25px;
-}
-
-.island-popup.active {
-  width: 250px;
-  height: 60px;
-  border-radius: 50px;
-
-
-}
-
 .content {
   position: relative;
   display: flex;
@@ -256,34 +244,6 @@ a {
   transition: 0.5s;
 }
 
-.island-popup-camera {
-  color: white;
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  background: #121212;
-  box-shadow: 0 0 1px grey;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  z-index: 99999;
-  transition: all .5s;
-}
-
-.island-popup:hover .island-popup-camera {
-
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  z-index: 99999;
-  transition: all .5s;
-  visibility: visible;
-  opacity: 0;
-}
-
 .action {
   position: relative;
   top: 5px;
@@ -293,8 +253,6 @@ a {
   transition: 0.5s;
   visibility: hidden;
   opacity: 0;
-
-
 
 }
 
@@ -602,19 +560,20 @@ ion-icon.green {
   width: 25px;
   color: white !important;
 }
-.enlem{
+
+.enlem {
 
   font-size: 10px;
   margin-top: -29px;
   display: flex;
   margin-left: 43px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 400;
+  font-weight: 400;
 }
 
 .hava {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 400;
+  font-weight: 400;
   cursor: pointer;
   position: relative;
   top: 15px;
@@ -902,7 +861,7 @@ body {
   margin-top: 11px;
   margin-left: -16px;
   border-radius: 50%;
-  
+
   border: 2px solid #1e1e1e;
   position: relative;
   z-index: 1;
@@ -928,77 +887,88 @@ body {
 .clock .number1 {
   transform: rotate(30deg);
 }
- .clock .number1 div{
+
+.clock .number1 div {
   transform: rotate(-30deg);
 }
 
 .clock .number2 {
   transform: rotate(60deg);
 }
-.clock .number2 div{
+
+.clock .number2 div {
   transform: rotate(-60deg);
 }
 
 .clock .number3 {
   transform: rotate(90deg);
 }
-.clock .number3 div{
+
+.clock .number3 div {
   transform: rotate(-90deg);
 }
 
 .clock .number4 {
   transform: rotate(120deg);
 }
-.clock .number4 div{
+
+.clock .number4 div {
   transform: rotate(-120deg);
 }
 
 .clock .number5 {
   transform: rotate(150deg);
 }
-.clock .number5 div{
+
+.clock .number5 div {
   transform: rotate(-150deg);
 }
 
 .clock .number6 {
   transform: rotate(180deg);
 }
-.clock .number6 div{
+
+.clock .number6 div {
   transform: rotate(-180deg);
 }
 
 .clock .number7 {
   transform: rotate(210deg);
 }
-.clock .number7 div{
+
+.clock .number7 div {
   transform: rotate(-210deg);
 }
 
 .clock .number8 {
   transform: rotate(240deg);
 }
-.clock .number8 div{
+
+.clock .number8 div {
   transform: rotate(-240deg);
 }
 
 .clock .number9 {
   transform: rotate(270deg);
 }
-.clock .number9 div{
+
+.clock .number9 div {
   transform: rotate(-270deg);
 }
 
 .clock .number10 {
   transform: rotate(300deg);
 }
-.clock .number10 div{
+
+.clock .number10 div {
   transform: rotate(-300deg);
 }
 
 .clock .number11 {
   transform: rotate(330deg);
 }
-.clock .number11 div{
+
+.clock .number11 div {
   transform: rotate(-330deg);
 }
 
