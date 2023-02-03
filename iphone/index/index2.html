@@ -98,7 +98,7 @@
                <label class="hava"></label>
                <ion-icon name="navigate" class="navigate1"></ion-icon>
                <label class="ruzgar">
-                 <ion-icon name="thunderstorm-outline"></ion-icon>
+                 
                </label>
              </label>
              <label class="yazihava">Hava Durumu</label>
@@ -455,6 +455,22 @@ async function getWeather() {
   widget.querySelector('.sehir').textContent = data.name;
   widget.querySelector('.derece').textContent = `${Math.round(data.main.temp)}°C`;
   widget.querySelector('.hava').textContent = data.weather[0].description;
+}
+
+getWeather();
+async function getWeather() {
+const response = await fetch(url);
+const data = await response.json();
+
+const widget = document.querySelector('#weatherWidget');
+widget.querySelector('.sehir').textContent = data.name;
+widget.querySelector('.derece').textContent = ${Math.round(data.main.temp)}°C;
+widget.querySelector('.hava').textContent = data.weather[0].description;
+
+const iconCode = data.weather[0].icon;
+const iconUrl = 'http://openweathermap.org/img/wn/${iconCode}@2x.png';
+const icon = widget.querySelector('.navigate1');
+icon.setAttribute('src', iconUrl);
 }
 
 getWeather();
