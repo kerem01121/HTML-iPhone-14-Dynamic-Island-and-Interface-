@@ -560,7 +560,7 @@ ion-icon.green {
 
   position: relative;
   top: -50px;
-  margin-left: -50px;
+  margin-left: -13px;
   cursor: pointer;
 
 }
@@ -587,17 +587,28 @@ ion-icon.green {
 
 .navigate1 {
   display: flex;
-  margin-top: -66px;
-  margin-left: 15px;
+  margin-top: 36px;
+  margin-left: 1px;
+  width: 25px;
+  color: white !important;
+}
+.enlem{
+
+  font-size: 10px;
+  margin-top: -29px;
+  display: flex;
+  margin-left: 43px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 400;
 }
 
 .hava {
-  font-weight: bold;
-
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 400;
   cursor: pointer;
   position: relative;
   top: 15px;
-  margin-left: -45px;
+  margin-left: -30px;
 
 }
 
@@ -605,8 +616,8 @@ ion-icon.green {
 
   display: flex;
   color: white;
-  margin-left: 18px;
-  margin-top: 74px;
+  margin-left: 17px;
+  margin-top: 50px;
   font-size: 11px;
 
 }

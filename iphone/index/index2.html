@@ -96,9 +96,10 @@
                <label class="sehir"></label>
                <label class="derece"></label>
                <label class="hava"></label>
-               <ion-icon name="navigate" class="navigate1"></ion-icon>
+               <ion-icon name="navigate" style="margin-top:-67px;display:flex;margin-left:50px;font-size: 10px;"></ion-icon>
+               <img class="navigate1"/>
                <label class="ruzgar">
-                 
+                 <label class="enlem">Y:21° D:15° </label>
                </label>
              </label>
              <label class="yazihava">Hava Durumu</label>
@@ -443,32 +444,20 @@
 
     <script>
       const apiKey = '6e678ead6c372d52a46ea2dc6b4d56e9';
-const city = 'Istanbul';
-const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+const city = 'İstanbul';
+const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=tr`;
 
-async function getWeather() {
-  const response = await fetch(url);
-  const data = await response.json();
-  
-  // Gerçek hava durumu verilerini divin içindeki etiketlere atayın
-  const widget = document.querySelector('#weatherWidget');
-  widget.querySelector('.sehir').textContent = data.name;
-  widget.querySelector('.derece').textContent = `${Math.round(data.main.temp)}°C`;
-  widget.querySelector('.hava').textContent = data.weather[0].description;
-}
-
-getWeather();
 async function getWeather() {
 const response = await fetch(url);
 const data = await response.json();
 
 const widget = document.querySelector('#weatherWidget');
 widget.querySelector('.sehir').textContent = data.name;
-widget.querySelector('.derece').textContent = ${Math.round(data.main.temp)}°C;
+widget.querySelector('.derece').textContent = `${Math.round(data.main.temp)}°`;
 widget.querySelector('.hava').textContent = data.weather[0].description;
 
 const iconCode = data.weather[0].icon;
-const iconUrl = 'http://openweathermap.org/img/wn/${iconCode}@2x.png';
+const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
 const icon = widget.querySelector('.navigate1');
 icon.setAttribute('src', iconUrl);
 }
@@ -477,7 +466,7 @@ getWeather();
 
       setInterval(setClock,1000)
 
-
+      
     const hourHand = document.querySelector('[data-hour-hand]')
     const minuteHand = document.querySelector('[data-minute-hand]')
     const secondHand = document.querySelector('[data-second-hand]')
