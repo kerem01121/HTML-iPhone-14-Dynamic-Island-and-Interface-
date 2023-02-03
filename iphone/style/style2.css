@@ -94,6 +94,16 @@ a {
 .swiper-pagination-bullet {
   background: #fff !important;
 }
+.swiper-pagination {
+  background: rgba(255, 255, 255, 0.315) !important;
+  display: inline-block !important;
+  border-radius: 15px;
+  width: max-content !important;
+  margin-left: 100px !important;
+  right: 0 !important;
+  padding: 5px;
+  
+}
 
 .swiper-pagination-bullet-active {
   background: #fff;
