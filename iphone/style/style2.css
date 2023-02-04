@@ -93,6 +93,10 @@ a {
 
 .swiper-pagination-bullet {
   background: #fff !important;
+  
+}
+.f.bullet{
+  visibility: hidden;
 }
 .swiper-pagination {
   background: rgba(255, 255, 255, 0.315) !important;
@@ -105,9 +109,8 @@ a {
   
 }
 
-.swiper-pagination-bullet-active {
-  background: #fff;
-}
+
+
 
 
 
@@ -833,7 +836,7 @@ font-weight: 400;
   background-color: #a8a8a873;
   border-radius: 30px;
   margin-top: 495px;
-  margin-left: -74px;
+  margin-left: -36px;
 
 
 
