@@ -93,15 +93,40 @@
                   background: rgb(60,116,199);
                   background: linear-gradient(180deg, rgba(60,116,199,1) 0%, rgba(100,144,210,1) 35%, rgba(255,255,255,1) 450%);">
              <label class="sutun1">
+              <div style="width: 0;height: 0;margin-left: -9px;">
+              <div style="width: 0; height: 0;margin-left: 15px;background-color: transparent;">
                <label class="sehir"></label>
+             <div style="width: 0; height: 0;margin-left: 23px;margin-top: 3px;background-color: transparent;">
                <label class="derece"></label>
+            </div>
+              <div style="width: 40px; height: 0px;background-color: transparent;display: in;">
                <label class="hava"></label>
-               <ion-icon name="navigate" style="margin-top:-67px;display:flex;margin-left:50px;font-size: 10px;"></ion-icon>
+              </div>
+              <div style="width: 0; height: 0;">
+               <ion-icon name="navigate" style="margin-top:-81px;display:flex;margin-left:20px;font-size: 10px;background-color: transparent;"></ion-icon>
+              </div>
+              <div style="width: 0; height: 0;margin-left: -21px;background-color: transparent;">
                <img class="navigate1"/>
-               <label class="ruzgar">
-                 <label class="enlem">Y:21° D:15° </label>
+              </div>
+              <div style="width: 0; height: 0;">
+               
+                </div>
+                 
                </label>
+               <div style="width: 0;height: 0;margin-top: -2px;display: inline-block;margin-left: -50px;">
+               <div style="width: 20; height: 20;background-color: transparent;margin-top: 50px;margin-left: -30px;">
+              <label class="enlem">Y:21° </label>
+              
+              
+            </div>
+            <div style="width: 20; height: 20;background-color: transparent;margin-top: -54px;margin-left: -5px;">
+            <label class="enlem">D:15° </label>
+          </div>
+        </div>
              </label>
+             </div>
+            </div>
+                
              <label class="yazihava">Hava Durumu</label>
            </div>
        
@@ -453,7 +478,7 @@
 
     <script>
       const apiKey = '6e678ead6c372d52a46ea2dc6b4d56e9';
-const city = 'tanzanya';
+const city = 'istanbul';
 const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=tr`;
 
 async function getWeather() {
